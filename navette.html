@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/shuttle.png"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+	<title>Navette Ile Verte</title>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- id class -->
+	<div class="row">
+		<div id="flex" class="flex-container">
+			<div id="introduction" class="column" style="background-color:#33BB97;">
+				<picture id="phare">
+				  <img src="images/phare.png" alt="Image du phare de l'île.">
+				</picture>
+				<header>
+					<h1 class="museo700 gauche margau">Offrez-vous l'&icirc;le Verte <br>et nos circuits d&eacute;couverte</h1>
+				</header>
+				<div class="roval">
+					<h4 class="museo500">&Agrave; bord de nos v&eacute;hicules &eacute;lectriques</h4>
+				</div><!-- /roval -->
+			</div><!-- /A -->
+			<div id="renseignements" class="column" style="background-color:#33BB97;">
+				<h3 class="museo500 marhautlar margau marbas">Nos v&eacute;hicules &eacute;l&eacute;ctriques</h3>
+				<div class="navettes marbas">
+					<div class="polaroid">
+						<img src="images/navette13.png" alt="Image de la navette de treize passagers." class="vehicule">
+						<h5>V&eacute;hicule 13 passagers</h5>
+					</div><!-- /polaroid -->
+				</div><!-- /navettes -->
+				<div class="navettes">
+					<div class="polaroid">
+						<img src="images/navette7.png" alt="Image de la navette de sept passagers." class="vehicule">
+						<h5>V&eacute;hicule 7 passagers</h5>
+					</div><!-- /polaroid -->
+				</div><!-- /navettes -->
+				<div class="margau gauche marhautlar" id="info">
+					<p>Le service de navette &eacute;lectrique est une initiative de la Corporation
+							de d&eacute;veloppement et de gestion touristique de l’&icirc;le Verte.
+					</p>
+					<div class="marhautlar centre information franklin">
+						<a href="mailto:cdgtiv.navette@gmail.com"><strong><span class="icon" id="interrogation"></span><h2>Renseignements et r&eacute;servations</strong></h2></a>
+						<h2 id="telephone">418 714-3528</h2>
+						<a href="mailto:cdgtiv.navette@gmail.com" id="mailto"><h2>cdgtiv.navette@gmail.com</h2></a>
+						<div id="lien">
+							<a href="http://www.ileverte-tourisme.com/" target="_blank" id="liensitetouristique"><h2>Site touristique de l'&Icirc;le Verte</h2></a>
+						</div><!-- /lien -->
+					</div><!-- /information -->
+				</div><!-- /info -->
+			</div><!-- /B -->
+			<div id="horaire" class="column" style="background-color:#33BB97;">
+				<div class="margau marbas">
+					<h2 class="museo700 marhautlar gauche">HORAIRE ET R&Eacute;SERVATION</h2>
+					<p>L’horaire des deux circuits, <strong>La Grande Vir&eacute;e</strong> et <strong>La Belle &Eacute;pop&eacute;e</strong>, est  assorti à celui du traversier, principalement en fonction des jours <span class="long-stroke-overlay">&#822;</span> identifi&eacute;es en orange sur l’horaire <span class="long-stroke-overlay">&#822;</span> offrant  une possibilité de traverse le matin et en fin de journ&eacute;e. Un circuit  personnalis&eacute; peut aussi être organis&eacute; sur demande.
+					</p>
+					<p>Les demandes de r&eacute;servations doivent nous &ecirc;tre 		transmises, autant que possible, au moins 24 heures	&agrave; l'avance.
+					</p>
+				</div><!-- /horaire -->
+				<div class="margau" id="deplacements-ponctuels">
+					<h2 class="museo700 marhautlar gauche">D&Eacute;PLACEMENTS PONCTUELS</h2>
+						<p>Nous offrons la possibilit&eacute; de d&eacute;placements ponctuels, au tarif minimum de 5$ et plus par personne, selon la distance parcourue.  Nous pouvons aussi transporter vos bagages pour vous, &agrave; demi tarif par personne, minimum de 5$. Possibilit&eacute; de transporter des v&eacute;los.</p>
+				</div><!-- /deplacements-ponctuels -->
+			</div><!-- /C -->
+			<!-- animation with road and shuttle -->
+			<div id="voyage" class="full" >
+				<svg id="chemin" width="1851" height="350" xmlns="http://www.w3.org/2000/svg" version="1.1"> <!-- 1731.8994140625 -->
+					<path class="animation path" stroke="#33BB97" fill="none"  stroke-linejoin="round" stroke-width="4" stroke-miterlimit="10"
+						d="M 0 100 Q 100 260 200 200 Q 400 50 550 250 C 670 400 630 200 1850 300" />
+					<path class="animation dashed" stroke="#A6DAC7" fill="none" stroke-linejoin="round" stroke-width="6"
+						d="M 0 100 Q 100 260 200 200 Q 400 50 550 250 C 670 400 630 200 1850 300" />
+					<image xlink:href="images/navettepenchee.png" class="animation vehicule" id="navettepenchee" x="9" y="-75" width="435" height="439"/>
+					<image xlink:href="images/navette.png" class="animation vehicule" id="navette" x="1325" y="140" width="258" height="205"/>
+					<img id="explorer" src="images/navettes.png" alt="Image de deux navettes sur un chemin." class="animation"/>
+				</svg>
+			</div><!-- /chemin -->
+			<div id="epopee" class="column" style="background-color:#33BB97;">
+				<div class="margau">
+					<div class="animation rectangle" id="circuitA">
+						<h4><strong>CIRCUIT 1 - </strong>DUR&Eacute;E : 6 HEURES (40$)</h4>
+					</div><!-- /rectangle778 -->
+					<h2 class="museo700">La Belle &Eacute;pop&eacute;e</h2>
+					<h3>D&eacute;couverte d'un circuit touristique <br>unique et exceptionnel !</h3>
+					<ol class="ordonne">
+						<li>
+							<strong>Le Phare de l’&icirc;le Verte</strong>, le plus vieux phare construit sur le fleuve Saint-Laurent (1809). Les paysages et la vue sur la c&ocirc;te nord et l’embouchure du Saguenay y sont magnifiques. On y trouve un fascinant mus&eacute;e, relatant l’histoire du phare et de ses gardiens. Au terme de la visite, vous pourrez acc&eacute;der &agrave; la lanterne du phare et admirer les paysages du haut de la tour.
+						</li>
+						<li>
+							<strong>L’&Eacute;cole Michaud</strong>, exposition t&eacute;moignant, de fa&ccedil;on fort int&eacute;ressante, de la vie des insulaires d’hier &agrave; aujourd’hui. On y prend la mesure de l’importance de certaines activit&eacute;s, pour les gens de l’&icirc;le, comme la la r&eacute;colte de mousse de mer, disparue dans les ann&eacute;es 1930, la pêche &agrave; la fascine, la navigation et les transports entre l’&icirc;le et la terre ferme ainsi que les d&eacute;couvertes arch&eacute;ologiques r&eacute;alis&eacute;es sur l’&icirc;le Verte, il y a quelques ann&eacute;es.
+						</li>
+						<li>
+							<strong>Le Mus&eacute;e du Squelette</strong>, un mus&eacute;e d’histoire naturelle surprenant et unique au Qu&eacute;bec. Une r&eacute;alisation du biologiste Pierre-Henry Fontaine. Vous y d&eacute;couvrirez, &agrave; travers une remarquable 			collection de plus de 300 squelettes, l’&eacute;volution des 	esp&egrave;ces &agrave; travers les diverses adaptations li&eacute;es &agrave; l’environnement et &agrave; la survie.
+						</li>
+					</ol>
+				</div><!-- /margau -->
+			</div><!-- /epopee -->
+			<div id="viree" class="column" style="background-color:#33BB97;">
+				<div class="margau">
+					<div class="animation rectangle" id="circuitB">
+						<h4><strong>CIRCUIT 2 - </strong>DUR&Eacute;E : 7 HEURES (30$)</h4>
+					</div><!-- /circuitB -->
+					<h2 class="museo700">La Grande Vir&eacute;e</h2>
+					<h3>D&eacute;couverte de l’&icirc;le Verte et de ses paysages magnifiques</h3>
+					<p>Venez d&eacute;couvrir l’&icirc;le dans toute sa splendeur. 	Accordez-nous votre journ&eacute;e enti&egrave;re. Nous vous montrerons notre belle &icirc;le Verte &agrave; bord d’un v&eacute;hicule &eacute;cologique mu &agrave; l’&eacute;lectricit&eacute;.
+					</p>
+					<p><em>La Grande Vir&eacute;e</em> vous entra&icirc;nera de part en part sur notre magnifique &icirc;le Verte, du Bout-d’en-Bas 			jusqu’au Bout-d’en-Haut, du nord au sud (circuit de 15 kilomètres). Il comprend une balade comment&eacute;e qui vous fera explorer des recoins enchanteurs de notre milieu de vie. Vous en apprendrez plus sur le mode de vie des insulaires d’hier et d’aujourd’hui.
+					</p>
+				</div><!-- /margau -->
+			</div><!-- /viree -->
+			<div id="reservation" class="column" style="background-color:#33BB97;">
+				<div class="margau paddroit">
+					<h2 id ="reservez" class="gauche"><strong>R&eacute;servez t&ocirc;t afin d’assurer <br>votre place &agrave; bord.</strong></h2>
+					<ul class="desordonne marhautlar">
+						<li id="tasse" class="icon"><span>Un arr&ecirc;t repas est pr&eacute;vu en cours de journ&eacute;e. Nous vous conduirons &agrave; un restaurant mais vous pouvez apporter votre lunch si vous préférez faire un pique-nique et profiter des lieux.</span>
+						</li>
+						<li id="dollar" class="icon"><span>Le paiement du forfait <strong>La Grande Vir&eacute;e</strong> doit &ecirc;tre effectu&eacute; en argent comptant. Celui de <strong>La Belle &Eacute;pop&eacute;e</strong> peut &ecirc;tre effectu&eacute; par carte de cr&eacute;dit &agrave; l’&Eacute;cole Michaud.</span>
+						</li>
+					</ul>
+				</div><!-- /reservation -->
+			</div><!-- /grid -->
+			<div id="attractions" class="full" style="background-color:#33BB97;">
+				<img src="images/attractions.png" alt="Attractions touristiques sur l'ile."/>
+			</div><!-- /attractions  -->
+	</div><!-- /flex  -->
+
+	<script>
+
+		$(document).ready(function() {
+			if(navigator.userAgent.indexOf("Opera") != -1 || navigator.userAgent.indexOf('OPR') != -1 )
+			{
+				$("#chemin").hide();
+			}
+			else if(navigator.userAgent.indexOf("Chrome") != -1 )
+			{
+				//$("#chemin").hide();
+			}
+			else if(navigator.userAgent.indexOf("Safari") != -1)
+			{
+				$("#chemin").hide();
+			}
+		});
+
+		var $window = $(window);
+		var $elem = $(".animation")
+
+		function isScrolledIntoView($elem, $window) {
+				var docViewTop = $window.scrollTop();
+				var docViewBottom = docViewTop + $window.height();
+
+				var elemTop = $elem.offset().top;
+				var elemBottom = elemTop + $elem.height();
+
+				return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+		}
+
+		$(document).on("scroll", function() {
+			if (isScrolledIntoView($elem, $window)) {
+					$elem.addClass("animate");
+			}
+		});
+	</script>
+
+</body>
+</html>
